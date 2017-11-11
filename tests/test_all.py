@@ -7,8 +7,10 @@ def pythonpath():
     sys.path.append('..')
     yield
 
+def test_deps():
+    deps.resolve(*li)
 
-def test_1():
+def test_all():
     from di4 import run
 
     class Ko1:
